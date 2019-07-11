@@ -1,0 +1,13 @@
+<h1>Cocktails#show</h1>
+<p>Find me in app/views/cocktails/show.html.erb</p>
+
+
+<%= @cocktail.name %>
+
+<ul>
+  <% @cocktail.doses.each do |dose| %>
+    <li>
+      <p><%= dose.description %> <%= dose.ingredient.name %></p>
+    </li>
+  <% end %>
+</ul>
